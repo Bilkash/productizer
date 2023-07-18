@@ -7,13 +7,11 @@ import { StateType } from "../../types";
 export default function HomePage () {
 	const dispatch = useDispatch();
 	const state = useSelector((state: StateType) => state);
-	const { limit } = state;
-
-	console.log(limit);
+	const { limit, skip } = state;
 
 	useEffect(() => {
-		dispatch({ type: "GET_PRODUCTS_DATA", limit });
-	}, [limit]);
+		dispatch({ type: "GET_PRODUCTS_DATA", limit, skip });
+	}, [skip, dispatch]);
 
 	return (
 		<Layout>

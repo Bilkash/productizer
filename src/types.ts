@@ -9,7 +9,9 @@ export type ProductType = {
 	brand: string,
 	category: string,
 	thumbnail: string
-	images: string[]
+	images: string[],
+	isDeleted?: boolean,
+	deletedOn?: string,
 }
 
 export type RespondType = {
@@ -20,8 +22,9 @@ export type RespondType = {
 }
 
 export type StateType = {
-	products: ProductType[] | null;
+	products: ProductType[] | [];
 	productForEdit: ProductType | null;
 	error: string | null;
-	limit: number
+	limit: number,
+	skip: number,
 };

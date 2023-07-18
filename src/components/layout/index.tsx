@@ -27,6 +27,8 @@ const headerStyle: React.CSSProperties = {
 	lineHeight: "64px",
 	fontSize: "28px",
 	backgroundColor: "#66b6e6",
+	width: "80%",
+	margin: "0 auto"
 };
 
 const contentStyle: React.CSSProperties = {
@@ -34,4 +36,6 @@ const contentStyle: React.CSSProperties = {
 	lineHeight: "120px",
 	color: "#000000",
 	backgroundColor: "#ffffff",
+	width: "80%",
+	margin: "0 auto"
 };

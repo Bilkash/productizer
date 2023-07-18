@@ -3,6 +3,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 
 import { ProductType } from "../../types";
+import deleteProduct from "../../requests/deleteProduct";
 
 export default function ProductItem({
 	id,
@@ -57,7 +58,8 @@ const descriptionStyle: React.CSSProperties = {
 
 const itemStyle: React.CSSProperties = {
 	justifyContent: "normal",
-	gap: "20px"
+	gap: "20px",
+	marginLeft: "75px"
 };
 
 const titleStyle: React.CSSProperties = {

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button, List } from "antd";
 
-import { StateType } from "../../types";
 import ProductItem from "../product";
+import { StateType } from "../../types";
 
 export default function ProductTable() {
 	const dispatch = useDispatch();
